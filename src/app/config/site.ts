@@ -7,10 +7,10 @@ export const siteConfig = {
   address: process.env.NEXT_PUBLIC_CONTACT_ADDRESS || "100 Innovation Way, Suite 400, San Francisco, CA 94107, USA",
   currency: "₹",
   logo: {
-    src: "/assets/logo.png",
+    src: "/assets/logo.webp",
     alt: "BlogVerse Logo",
     width: 200,
     height: 60,
   },
-  favicon: "/favicon.ico",
+  favicon: "/assets/logo.webp",
 };
