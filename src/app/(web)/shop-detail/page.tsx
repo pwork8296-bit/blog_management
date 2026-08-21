@@ -5,20 +5,20 @@ import DetailSidebar from "../../components/web/DetailSidebar";
 import RelatedProducts from "../../components/web/RelatedProducts";
 
 export const metadata: Metadata = {
-  title: "Shop Detail – Brocoli | Gardening Tools",
+  title: "Publication Detail | BlogVerse",
   description:
-    "View full details, reviews and related products for fresh organic Brocoli.",
+    "View full details, chapters, reviews, and related publications on BlogVerse.",
 };
 
 export default function ShopDetailPage() {
   return (
     <>
       <PageHeader
-        title="Shop Detail"
+        title="Publication Detail"
         breadcrumbs={[
           { label: "Home", href: "/" },
-          { label: "Pages", href: "#" },
-          { label: "Shop Detail" },
+          { label: "Publications", href: "/shop" },
+          { label: "Publication Detail" },
         ]}
       />
 

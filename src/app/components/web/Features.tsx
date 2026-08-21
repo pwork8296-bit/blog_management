@@ -1,23 +1,23 @@
 const features = [
   {
-    icon: "fas fa-truck",
-    title: "Fast Shipping Across India",
-    desc: "Quick delivery to home & workshops",
+    icon: "fas fa-feather-alt",
+    title: "Curated Editorial",
+    desc: "Hand-picked articles from top industry experts",
   },
   {
-    icon: "fas fa-tools",
-    title: "100% Alloy Steel Tools",
-    desc: "Heavy-duty, rust-resistant, durable build",
+    icon: "fas fa-globe-americas",
+    title: "Global Writer Network",
+    desc: "Stories from tech leaders and creative thinkers",
   },
   {
-    icon: "fas fa-user-shield",
-    title: "Secure Payment Options",
-    desc: "COD & 100% safe online payment modes",
+    icon: "fas fa-book-reader",
+    title: "Distraction-Free Reading",
+    desc: "Clean typography and seamless reading experience",
   },
   {
-    icon: "fa fa-phone-alt",
-    title: "Expert Customer Support",
-    desc: "Support & guidance for tool selection",
+    icon: "fas fa-rocket",
+    title: "Instant Publishing & SEO",
+    desc: "Powerful CMS tools and search optimization",
   },
 ];
 

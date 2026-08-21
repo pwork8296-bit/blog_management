@@ -4,7 +4,7 @@ import Link from "next/link";
 import ProductList from "@/app/components/admin/ProductList";
 
 export const metadata: Metadata = {
-  title: "Products | Windmill Admin",
+  title: "Products & Publications | BlogVerse Admin",
   description: "Manage products and inventory",
 };
 

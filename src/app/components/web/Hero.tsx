@@ -7,54 +7,54 @@ export default function Hero() {
         <div className="row g-5 align-items-center">
           {/* Left: Heading & Search */}
           <div className="col-md-12 col-lg-7">
-            <h4 className="mb-3 text-secondary">High Quality Gardening Tools &amp; Equipment</h4>
-            <h1 className="mb-5 display-3 text-primary">Heavy-Duty Gardening Tools &amp; Pruners Delivered</h1>
+            <h4 className="mb-3 text-secondary fw-semibold">Ideas, Technology &amp; Modern Stories</h4>
+            <h1 className="mb-5 display-3 text-primary fw-bold">Curated Stories &amp; Editorial Insights Delivered</h1>
             <div className="position-relative mx-auto">
               <input
                 className="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill"
                 type="text"
-                placeholder="Search Garden Khurpi, Pruning Shears, Trowel Set, Watering Can..."
+                placeholder="Search articles by topic, author, AI, design, coding..."
               />
               <button
                 type="submit"
-                className="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100"
+                className="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100 fw-bold"
                 style={{ top: 0, right: "25%" }}
               >
-                Search Now
+                Search Articles
               </button>
             </div>
           </div>
 
           {/* Right: Carousel */}
           <div className="col-md-12 col-lg-5">
-            <div id="carouselId" className="carousel slide position-relative" data-bs-ride="carousel">
+            <div id="carouselId" className="carousel slide position-relative shadow rounded" data-bs-ride="carousel">
               <div className="carousel-inner" role="listbox">
                 <div className="carousel-item active rounded">
                   <img
-                    src="/assets/img/agttools/3pcs-gardening-scissors-pruner-and-mini-folding-hand-saw-alloy-steel-construction-b0fkbf9534-1000x1000.webp"
+                    src="/assets/img/featur-1.jpg"
                     className="img-fluid w-100 h-100 bg-secondary rounded"
                     style={{ height: "350px", objectFit: "cover" }}
-                    alt="PS Ricca3-Piece Gardening Tool Set"
+                    alt="Modern Web Architecture"
                   />
-                  <a href="#" className="btn px-4 py-2 text-white rounded">Garden Tool Sets</a>
+                  <a href="/shop" className="btn px-4 py-2 text-white rounded">Web Architecture</a>
                 </div>
                 <div className="carousel-item rounded">
                   <img
-                    src="/assets/img/agttools/WhatsAppImage2025-12-05at18.45.12.jpg"
+                    src="/assets/img/featur-2.jpg"
                     className="img-fluid w-100 h-100 rounded"
                     style={{ height: "350px", objectFit: "cover" }}
-                    alt="PS RiccaGarden 3 Cutter Set"
+                    alt="AI Engineering Insights"
                   />
-                  <a href="#" className="btn px-4 py-2 text-white rounded">Pruners &amp; Cutters</a>
+                  <a href="/shop" className="btn px-4 py-2 text-white rounded">AI &amp; Machine Learning</a>
                 </div>
                 <div className="carousel-item rounded">
                   <img
-                    src="/assets/img/agttools/03_9bad78c5-c6a4-4aa0-af94-6b2f456da850.jpg"
+                    src="/assets/img/featur-3.jpg"
                     className="img-fluid w-100 h-100 rounded"
                     style={{ height: "350px", objectFit: "cover" }}
-                    alt="PS Ricca5L Green Watering Can"
+                    alt="Design Systems at Scale"
                   />
-                  <a href="#" className="btn px-4 py-2 text-white rounded">Watering Cans &amp; Hose</a>
+                  <a href="/shop" className="btn px-4 py-2 text-white rounded">Product &amp; UX Design</a>
                 </div>
               </div>
               <button

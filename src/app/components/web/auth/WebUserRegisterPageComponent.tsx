@@ -59,8 +59,8 @@ export default function WebUserRegisterPageComponent() {
             <Link href="/" className="d-inline-block mb-3 text-decoration-none">
               <span className="h3 fw-bold text-primary mb-0">{siteConfig.name}</span>
             </Link>
-            <h4 className="fw-bold text-dark mb-1">Create Customer Account</h4>
-            <p className="text-muted small">Register to enjoy easy ordering & tracking</p>
+            <h4 className="fw-bold text-dark mb-1">Create BlogVerse Account</h4>
+            <p className="text-muted small">Join our community of readers, writers, and thinkers</p>
           </div>
 
           <form onSubmit={handleSubmit}>

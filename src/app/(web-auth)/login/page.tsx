@@ -3,8 +3,8 @@ import WebUserLoginPageComponent from "@/app/components/web/auth/WebUserLoginPag
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Customer Login | PS Ricca - Online Nursery",
-  description: "Sign in to your customer account at PS Ricca to manage orders and checkout fast.",
+  title: "Sign In | BlogVerse",
+  description: "Sign in to your BlogVerse account to manage your stories, bookmarks, and author profile.",
 };
 
 export default function WebUserLoginPage() {

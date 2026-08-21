@@ -9,9 +9,9 @@ export default function ContactSection() {
             {/* Header Text */}
             <div className="col-12">
               <div className="text-center mx-auto" style={{ maxWidth: 700 }}>
-                <h1 className="text-primary">Get in Touch with {siteConfig.name}</h1>
-                <p className="mb-4">
-                  Have questions about our gardening tools, socket wrench sets, bulk orders, or product warranties? Reach out to our team anytime!
+                <h1 className="text-primary fw-bold">Get in Touch with {siteConfig.name}</h1>
+                <p className="mb-4 text-muted">
+                  Have questions about publishing on BlogVerse, editorial guidelines, partnerships, or writer sponsorships? Reach out to our team anytime!
                 </p>
               </div>
             </div>
@@ -21,8 +21,8 @@ export default function ContactSection() {
               <div className="h-100 rounded">
                 <iframe
                   className="rounded w-100"
-                  style={{ height: 400 }}
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448181.1637424687!2d76.81306465492167!3d28.64480031804473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi%20NCR!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                  style={{ height: 350 }}
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555098464!2d-122.5076401799795!3d37.757814996609724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />
@@ -34,19 +34,19 @@ export default function ContactSection() {
               <form action="">
                 <input
                   type="text"
-                  className="w-100 form-control border-0 py-3 mb-4"
-                  placeholder="Your Name"
+                  className="w-100 form-control border-0 py-3 mb-4 shadow-sm"
+                  placeholder="Your Full Name"
                 />
                 <input
                   type="email"
-                  className="w-100 form-control border-0 py-3 mb-4"
-                  placeholder="Enter Your Email"
+                  className="w-100 form-control border-0 py-3 mb-4 shadow-sm"
+                  placeholder="Your Email Address"
                 />
                 <textarea
-                  className="w-100 form-control border-0 mb-4"
+                  className="w-100 form-control border-0 mb-4 shadow-sm"
                   rows={5}
                   cols={10}
-                  placeholder="Your Tool Requirement or Message"
+                  placeholder="Your Editorial Inquiry, Story Pitch, or Message"
                 />
                 <button
                   className="w-100 btn form-control border-secondary py-3 bg-white text-primary fw-bold"

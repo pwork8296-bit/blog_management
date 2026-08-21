@@ -4,9 +4,9 @@ import BillingForm from "../../components/web/BillingForm";
 import CheckoutOrderSummary from "../../components/web/CheckoutOrderSummary";
 
 export const metadata: Metadata = {
-  title: "Checkout – Place Your Order | Gardening Tools",
+  title: "Checkout | BlogVerse",
   description:
-    "Enter your billing details and place your order for fresh organic fruits and vegetables.",
+    "Complete your order for digital publications, guides, and premium memberships on BlogVerse.",
 };
 
 export default function CheckoutPage() {

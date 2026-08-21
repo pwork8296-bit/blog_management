@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import ClientForm from "@/app/components/admin/ClientForm";
 
 export const metadata: Metadata = {
-  title: "Edit Client | Windmill Admin",
+  title: "Edit Client | BlogVerse Admin",
   description: "Update client details and domains",
 };
 

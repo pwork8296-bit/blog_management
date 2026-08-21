@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import ProductForm from "@/app/components/admin/ProductForm";
 
 export const metadata: Metadata = {
-  title: "Edit Product | Windmill Admin",
+  title: "Edit Product | BlogVerse Admin",
   description: "Update product details and inventory",
 };
 

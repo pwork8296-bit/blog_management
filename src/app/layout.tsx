@@ -3,8 +3,11 @@ import { siteConfig } from "./config/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: siteConfig.title,
-  description: "PS Ricca - Online Plant Nursery in Delhi NCR",
+  title: {
+    default: siteConfig.title,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: "BlogVerse - Modern blogging and content publishing platform for writers, creators, and readers.",
   icons: {
     icon: siteConfig.favicon,
     shortcut: siteConfig.favicon,

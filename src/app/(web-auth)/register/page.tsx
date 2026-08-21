@@ -3,8 +3,8 @@ import WebUserRegisterPageComponent from "@/app/components/web/auth/WebUserRegis
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Create Account | PS Ricca - Online Nursery",
-  description: "Register a new customer account at PS Ricca for easy plant shopping and tracking.",
+  title: "Create Account | BlogVerse",
+  description: "Register a new account at BlogVerse to publish articles, bookmark stories, and connect with writers.",
 };
 
 export default function WebUserRegisterPage() {

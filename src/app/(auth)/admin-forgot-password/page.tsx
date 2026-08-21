@@ -3,8 +3,8 @@ import ForgotPasswordPageComponent from "@/app/components/admin/ForgotPasswordPa
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Forgot Password | Windmill Admin Dashboard",
-  description: "Forgot password recovery page for Windmill Admin Dashboard",
+  title: "Forgot Password | BlogVerse Admin Dashboard",
+  description: "Forgot password recovery page for BlogVerse Admin Dashboard",
 };
 
 export default function AdminForgotPasswordPage() {

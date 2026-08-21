@@ -325,7 +325,7 @@ export default function ClientForm({ clientId, mode }: ClientFormProps) {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                placeholder="e.g. Gita Construction Corp"
+                placeholder="e.g. TechSphere Insights"
                 className="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input py-2.5 px-3 border border-gray-300 rounded-md"
               />
             </label>
@@ -342,7 +342,7 @@ export default function ClientForm({ clientId, mode }: ClientFormProps) {
                 name="domain"
                 value={formData.domain}
                 onChange={handleChange}
-                placeholder="e.g. gitaconstruction.com"
+                placeholder="e.g. techsphere.io"
                 className="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input py-2.5 px-3 border border-gray-300 rounded-md"
               />
             </label>
@@ -359,7 +359,7 @@ export default function ClientForm({ clientId, mode }: ClientFormProps) {
                 name="website_name"
                 value={formData.website_name}
                 onChange={handleChange}
-                placeholder="e.g. Gita Construction Official Site"
+                placeholder="e.g. TechSphere Official Blog"
                 className="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input py-2.5 px-3 border border-gray-300 rounded-md"
               />
             </label>
@@ -376,7 +376,7 @@ export default function ClientForm({ clientId, mode }: ClientFormProps) {
                 name="website_url"
                 value={formData.website_url}
                 onChange={handleChange}
-                placeholder="https://www.gitaconstruction.com"
+                placeholder="https://www.techsphere.io"
                 className="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input py-2.5 px-3 border border-gray-300 rounded-md"
               />
             </label>
@@ -538,7 +538,7 @@ export default function ClientForm({ clientId, mode }: ClientFormProps) {
                 name="default_meta_title"
                 value={formData.default_meta_title}
                 onChange={handleChange}
-                placeholder="e.g. Gita Construction - Expert Commercial & Residential Builders"
+                placeholder="e.g. TechSphere Insights - Modern Web & AI Architecture"
                 className="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:text-gray-300 dark:focus:shadow-outline-gray form-input py-2.5 px-3 border border-gray-300 rounded-md"
               />
             </label>

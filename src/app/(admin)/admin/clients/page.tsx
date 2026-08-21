@@ -4,7 +4,7 @@ import Link from "next/link";
 import ClientList from "@/app/components/admin/ClientList";
 
 export const metadata: Metadata = {
-  title: "Clients | Windmill Admin",
+  title: "Clients | BlogVerse Admin",
   description: "Manage client brands and domains",
 };
 

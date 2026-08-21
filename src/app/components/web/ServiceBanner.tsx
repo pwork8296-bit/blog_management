@@ -1,27 +1,27 @@
 const services = [
   {
-    img: "3pcs-gardening-scissors-pruner-and-mini-folding-hand-saw-alloy-steel-construction-b0fkbf9534-1000x1000.webp",
+    img: "featur-1.jpg",
     bgClass: "bg-secondary",
     contentBg: "bg-primary",
     titleClass: "text-white",
-    title: "Gardening Tool Kits",
-    offer: "Special Combo Deals",
+    title: "Web Engineering Guides",
+    offer: "Master Modern Frameworks",
   },
   {
-    img: "ChatGPTImageJan9_2026_05_24_30PM.png",
+    img: "featur-2.jpg",
     bgClass: "bg-dark",
     contentBg: "bg-light",
     titleClass: "text-primary",
-    title: "Car Wash Spray Guns",
-    offer: "Up to 30% OFF",
+    title: "AI & Autonomous Tech",
+    offer: "Weekly Deep Dives",
   },
   {
-    img: "41bBiubDuCL._SL1080.jpg",
+    img: "featur-3.jpg",
     bgClass: "bg-primary",
     contentBg: "bg-secondary",
     titleClass: "text-white",
-    title: "Hedge Shears & Cutters",
-    offer: "Flat ₹200 OFF",
+    title: "Design Systems & UX",
+    offer: "Case Studies & Insights",
   },
 ];
 

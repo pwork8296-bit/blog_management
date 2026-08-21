@@ -4,8 +4,8 @@ import Link from "next/link";
 import BlogList from "@/app/components/admin/BlogList";
 
 export const metadata: Metadata = {
-  title: "Blogs | Windmill Admin",
-  description: "Manage client blog posts and publications",
+  title: "Blogs | BlogVerse Admin",
+  description: "Manage and create blogs on BlogVerse",
 };
 
 export default function AdminBlogsPage() {

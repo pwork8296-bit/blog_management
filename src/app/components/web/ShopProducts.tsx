@@ -1,13 +1,13 @@
 const products = [
-  { img: "/assets/img/agttools/3pcs-gardening-scissors-pruner-and-mini-folding-hand-saw-alloy-steel-construction-b0fkbf9534-1000x1000.webp", category: "Garden Tool Kits", name: "PS Ricca3-Piece Gardening Tool Set", price: "₹800.00" },
-  { img: "/assets/img/agttools/WhatsAppImage2025-12-05at18.45.12.jpg", category: "Pruners & Cutters", name: "PS RiccaGarden 3 Cutter Tool Set", price: "₹1,349.00" },
-  { img: "/assets/img/agttools/WhatsAppImage2025-12-04at12.54.20.jpg", category: "Garden Tool Kits", name: "PS RiccaPruning Scissor & Gloves Combo", price: "₹550.00" },
-  { img: "/assets/img/agttools/WhatsAppImage2025-12-04at11.05.43.jpg", category: "Pruners & Cutters", name: "PS RiccaFolding Hand Saw Pruner", price: "₹420.00" },
-  { img: "/assets/img/agttools/41bBiubDuCL._SL1080.jpg", category: "Pruners & Cutters", name: "PS RiccaHeavy Duty Hedge Shears 29 Inch", price: "₹999.00" },
-  { img: "/assets/img/agttools/03_9bad78c5-c6a4-4aa0-af94-6b2f456da850.jpg", category: "Watering Cans", name: "PS Ricca5 Litre Green Watering Can", price: "₹359.00" },
-  { img: "/assets/img/agttools/1_26e58c45-6f41-4b67-a829-b6e4805ecd63.png", category: "Hand Tools", name: "PS Ricca5-Piece Garden Tool Set", price: "₹820.00" },
-  { img: "/assets/img/agttools/1_b8dde6dc-821f-429f-a29d-e415145aa249.jpg", category: "Hand Tools", name: "PS RiccaGarden Agriculture Khurpi", price: "₹299.00" },
-  { img: "/assets/img/agttools/ChatGPTImageJan9_2026_02_47_46PM_a2acc59d-a2a5-4991-9780-e7ebca023020.png", category: "Cutters & Axes", name: "PS RiccaHeavy Duty Gardening Axe 400g", price: "₹799.00" },
+  { img: "/assets/img/featur-1.jpg", category: "Web Engineering", name: "Modern Web Architecture (2026 Edition)", price: "₹499.00", desc: "Complete guide to Next.js, micro-frontends, and performance optimization." },
+  { img: "/assets/img/featur-2.jpg", category: "AI & ML", name: "Autonomous Agents & LLM Engineering", price: "₹699.00", desc: "Practical patterns for building production AI assistants and agents." },
+  { img: "/assets/img/featur-3.jpg", category: "Design Systems", name: "Design Systems for Enterprise Apps", price: "₹399.00", desc: "Component architecture, tokens, accessibility, and fluid design." },
+  { img: "/assets/img/banner-fruits.jpg", category: "Product & Growth", name: "The Startup Velocity Playbook", price: "₹550.00", desc: "Scaling digital products from zero to one with lean engineering." },
+  { img: "/assets/img/single-item.jpg", category: "Engineering Lead", name: "The Staff Engineer Roadmap", price: "₹450.00", desc: "Technical leadership, architecture reviews, and team impact." },
+  { img: "/assets/img/best-product-1.jpg", category: "Cloud & DevOps", name: "Distributed Systems in Practice", price: "₹599.00", desc: "Event-driven architecture, Kubernetes, and high availability." },
+  { img: "/assets/img/best-product-2.jpg", category: "Languages", name: "TypeScript 5.x Deep Dive", price: "₹350.00", desc: "Advanced types, generics, metaprogramming, and performance." },
+  { img: "/assets/img/best-product-3.jpg", category: "Database", name: "High Performance Postgres & Redis", price: "₹499.00", desc: "Query optimization, indexing strategies, and caching patterns." },
+  { img: "/assets/img/featur-1.jpg", category: "Security", name: "Application Security & Zero-Trust", price: "₹520.00", desc: "Securing modern cloud APIs and microservices from threats." },
 ];
 
 export default function ShopProducts() {
@@ -17,8 +17,8 @@ export default function ShopProducts() {
 
         {products.map((product, i) => (
           <div key={i} className="col-md-6 col-lg-6 col-xl-4">
-            <div className="rounded position-relative fruite-item">
-              <div className="fruite-img" style={{ height: "230px", overflow: "hidden" }}>
+            <div className="rounded position-relative fruite-item border h-100 d-flex flex-column bg-white shadow-sm overflow-hidden">
+              <div className="fruite-img" style={{ height: "200px", overflow: "hidden" }}>
                 <img
                   src={product.img}
                   className="img-fluid w-100 h-100 rounded-top"
@@ -27,24 +27,24 @@ export default function ShopProducts() {
                 />
               </div>
               <div
-                className="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                style={{ top: 10, left: 10 }}
+                className="text-white bg-primary px-3 py-1 rounded-pill position-absolute small font-weight-bold"
+                style={{ top: 10, left: 10, fontSize: "0.75rem" }}
               >
                 {product.category}
               </div>
-              <div className="p-4 border border-secondary border-top-0 rounded-bottom text-start">
-                <h4 className="text-truncate" title={product.name}>{product.name}</h4>
-                <p className="text-truncate">
-                  Durable high-grade alloy steel gardening &amp; landscaping tool.
+              <div className="p-4 border-top-0 rounded-bottom text-start d-flex flex-column flex-grow-1">
+                <h5 className="fs-6 fw-bold text-dark mb-1" title={product.name}>{product.name}</h5>
+                <p className="text-muted small flex-grow-1">
+                  {product.desc}
                 </p>
-                <div className="d-flex justify-content-between flex-lg-wrap align-items-center">
+                <div className="d-flex justify-content-between flex-lg-wrap align-items-center mt-3 pt-2 border-top">
                   <p className="text-dark fs-5 fw-bold mb-0">{product.price}</p>
                   <a
-                    href="#"
-                    className="btn border border-secondary rounded-pill px-3 text-primary"
+                    href="/cart"
+                    className="btn btn-sm btn-outline-primary rounded-pill px-3 fw-bold"
                   >
-                    <i className="fa fa-shopping-bag me-2 text-primary" />
-                    Add to cart
+                    <i className="fa fa-shopping-bag me-1 text-primary" />
+                    Get Guide
                   </a>
                 </div>
               </div>

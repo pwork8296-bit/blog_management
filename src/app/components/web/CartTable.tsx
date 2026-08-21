@@ -1,21 +1,21 @@
 const cartItems = [
   {
-    img: "/assets/img/agttools/3pcs-gardening-scissors-pruner-and-mini-folding-hand-saw-alloy-steel-construction-b0fkbf9534-1000x1000.webp",
-    name: "PS Ricca3-Piece Gardening Tool Set",
-    price: "₹800.00",
-    total: "₹800.00",
+    img: "/assets/img/featur-1.jpg",
+    name: "Modern Web Architecture (2026 Edition)",
+    price: "₹499.00",
+    total: "₹499.00",
   },
   {
-    img: "/assets/img/agttools/WhatsAppImage2025-12-05at18.45.12.jpg",
-    name: "PS RiccaGarden 3 Cutter Tool Set",
-    price: "₹1,349.00",
-    total: "₹1,349.00",
+    img: "/assets/img/featur-2.jpg",
+    name: "Autonomous Agents & LLM Engineering",
+    price: "₹699.00",
+    total: "₹699.00",
   },
   {
-    img: "/assets/img/agttools/03_9bad78c5-c6a4-4aa0-af94-6b2f456da850.jpg",
-    name: "PS Ricca5 Litre Green Watering Can",
-    price: "₹359.00",
-    total: "₹359.00",
+    img: "/assets/img/featur-3.jpg",
+    name: "Design Systems for Enterprise Apps",
+    price: "₹399.00",
+    total: "₹399.00",
   },
 ];
 

@@ -6,7 +6,7 @@ export default function ShopSection() {
   return (
     <div className="container-fluid fruite py-5">
       <div className="container py-5">
-        <h1 className="mb-4">{siteConfig.name} Online Plant Nursery</h1>
+        <h1 className="mb-4 fw-bold">{siteConfig.name} Publications &amp; Guides</h1>
         <div className="row g-4">
           <div className="col-lg-12">
 
@@ -17,7 +17,7 @@ export default function ShopSection() {
                   <input
                     type="search"
                     className="form-control p-3"
-                    placeholder="keywords"
+                    placeholder="Search guides, books & articles..."
                     aria-describedby="shop-search-icon"
                   />
                   <span id="shop-search-icon" className="input-group-text p-3">
@@ -34,10 +34,10 @@ export default function ShopSection() {
                     name="fruitlist"
                     className="border-0 form-select-sm bg-light me-3"
                   >
-                    <option value="">Nothing</option>
-                    <option value="popularity">Popularity</option>
-                    <option value="organic">Organic</option>
-                    <option value="fantastic">Fantastic</option>
+                    <option value="">Featured</option>
+                    <option value="popularity">Most Popular</option>
+                    <option value="recent">Latest Releases</option>
+                    <option value="rating">Highest Rated</option>
                   </select>
                 </div>
               </div>

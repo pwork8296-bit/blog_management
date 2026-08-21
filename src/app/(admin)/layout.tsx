@@ -7,8 +7,8 @@ import { AuthProvider } from "@/app/context/AuthContext";
 import ProtectedRoute from "@/app/context/ProtectedRoute";
 
 export const metadata: Metadata = {
-  title: "Admin Dashboard | Windmill Theme",
-  description: "Next.js Admin Dashboard with Windmill layout and themes",
+  title: "Admin Dashboard | BlogVerse CMS",
+  description: "BlogVerse Content Management System and Admin Portal",
 };
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {

@@ -3,9 +3,9 @@ import PageHeader from "../../components/web/PageHeader";
 import ContactSection from "../../components/web/ContactSection";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Gardening Tools",
+  title: "Contact Editorial & Support | BlogVerse",
   description:
-    "Get in touch with us for inquiries, feedback, or support regarding our fresh organic products.",
+    "Get in touch with the BlogVerse editorial team for article submissions, writer partnerships, or general inquiries.",
 };
 
 export default function ContactPage() {

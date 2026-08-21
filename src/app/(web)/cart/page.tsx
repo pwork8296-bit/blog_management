@@ -4,9 +4,9 @@ import CartTable from "../../components/web/CartTable";
 import CartSummary from "../../components/web/CartSummary";
 
 export const metadata: Metadata = {
-  title: "Cart – Your Shopping Cart | Gardening Tools",
+  title: "Reading Cart | BlogVerse",
   description:
-    "Review the items in your shopping cart, update quantities, apply coupons and proceed to checkout.",
+    "Review your selected e-books, subscriptions, and publication guides on BlogVerse.",
 };
 
 export default function CartPage() {

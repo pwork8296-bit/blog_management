@@ -3,20 +3,20 @@ import PageHeader from "../../components/web/PageHeader";
 import ShopSection from "../../components/web/ShopSection";
 
 export const metadata: Metadata = {
-  title: "Shop – Fresh Fruits & Vegetables | Gardening Tools",
+  title: "Explore Articles & Publications | BlogVerse",
   description:
-    "Browse our full selection of fresh organic fruits and vegetables. Filter by category, price, and more.",
+    "Browse our full collection of technology insights, design patterns, tutorials, and digital publications on BlogVerse.",
 };
 
 export default function ShopPage() {
   return (
     <>
       <PageHeader
-        title="Shop"
+        title="Articles & Publications"
         breadcrumbs={[
           { label: "Home", href: "/" },
-          { label: "Pages", href: "#" },
-          { label: "Shop" },
+          { label: "Explore", href: "#" },
+          { label: "Publications" },
         ]}
       />
       <ShopSection />

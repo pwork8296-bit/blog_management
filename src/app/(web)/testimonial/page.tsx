@@ -3,9 +3,9 @@ import PageHeader from "../../components/web/PageHeader";
 import Testimonials from "../../components/web/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Testimonial – Client Reviews | Gardening Tools",
+  title: "Testimonials & Reviews | BlogVerse",
   description:
-    "Read what our clients have to say about our fresh organic products and service.",
+    "Read what readers, authors, and creators have to say about the BlogVerse reading and publishing experience.",
 };
 
 export default function TestimonialPage() {

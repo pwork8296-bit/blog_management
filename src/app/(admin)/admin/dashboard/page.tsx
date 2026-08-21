@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import DashboardClient from "@/app/components/admin/DashboardClient";
 
 export const metadata: Metadata = {
-  title: "Dashboard | Windmill Admin",
-  description: "Windmill Admin Dashboard main view",
+  title: "Dashboard | BlogVerse Admin",
+  description: "BlogVerse Admin Dashboard main view",
 };
 
 export default function AdminDashboardPage() {

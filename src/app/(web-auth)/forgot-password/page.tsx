@@ -3,8 +3,8 @@ import WebUserForgotPasswordComponent from "@/app/components/web/auth/WebUserFor
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Forgot Password | PS Ricca - Online Nursery",
-  description: "Reset your customer password for your PS Ricca account.",
+  title: "Reset Password | BlogVerse",
+  description: "Reset your BlogVerse account password.",
 };
 
 export default function WebUserForgotPasswordPage() {

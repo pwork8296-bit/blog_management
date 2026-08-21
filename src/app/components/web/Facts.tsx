@@ -1,8 +1,8 @@
 const facts = [
-  { icon: "fa fa-smile", label: "Satisfied Customers", value: "25,000+" },
-  { icon: "fa fa-wrench", label: "Tool Models & Kits",  value: "100+"  },
-  { icon: "fa fa-truck", label: "Orders Delivered", value: "50,000+"  },
-  { icon: "fa fa-shield-alt", label: "Quality Guarantee",  value: "100%"  },
+  { icon: "fas fa-newspaper", label: "Published Articles", value: "50,000+" },
+  { icon: "fas fa-users", label: "Monthly Readers", value: "1.2M+" },
+  { icon: "fas fa-pen-nib", label: "Top Authors", value: "4,500+" },
+  { icon: "fas fa-bolt", label: "Platform Uptime", value: "99.9%" },
 ];
 
 export default function Facts() {

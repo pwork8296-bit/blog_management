@@ -9,25 +9,25 @@ interface RelatedBlogsProps {
 
 const defaultRelated = [
   {
-    title: "10 Key Innovations in Modern Concrete Technology",
-    excerpt: "How carbon-cured and ultra-high performance concrete formulas are reshaping structural longevity.",
+    title: "10 Key Innovations in Modern Web Architecture",
+    excerpt: "How server components, streaming SSR, and edge execution loops are reshaping web performance.",
     date: "Aug 12, 2026",
     image: "/assets/img/featur-1.jpg",
-    slug: "innovations-in-modern-concrete-technology",
+    slug: "modern-web-architecture",
   },
   {
-    title: "Thermal Envelope Design for Extreme Climate Regions",
-    excerpt: "Engineering double-walled thermal breaks and vacuum insulation panels for zero-emission builds.",
+    title: "Building Production Multi-Agent Systems in 2026",
+    excerpt: "Designing resilient tool sandboxes and deterministic supervisor agents with distributed memory.",
     date: "Aug 08, 2026",
     image: "/assets/img/featur-2.jpg",
-    slug: "thermal-envelope-design-extreme-climates",
+    slug: "ai-agent-engineering",
   },
   {
-    title: "Acoustic Dampening Solutions in High-Density Offices",
-    excerpt: "Balancing open collaborative architecture with speech privacy and sound isolation technologies.",
+    title: "Design Systems at Scale: Tokens & Fluid Typography",
+    excerpt: "Constructing accessible and delightful user interfaces with harmonious design tokens.",
     date: "Aug 02, 2026",
     image: "/assets/img/featur-3.jpg",
-    slug: "acoustic-dampening-high-density-offices",
+    slug: "design-systems-scale",
   },
 ];
 

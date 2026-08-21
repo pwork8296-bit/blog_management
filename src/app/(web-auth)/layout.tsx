@@ -8,8 +8,8 @@ import WebAuthLayoutClient from "@/app/components/web/auth/WebAuthLayoutClient";
 import WebProtectedRoute from "@/app/context/WebProtectedRoute";
 
 export const metadata: Metadata = {
-  title: siteConfig.title + " | Customer Portal",
-  description: "Sign in or register for a PS Ricca customer account to manage plant orders and fast checkout.",
+  title: "Reader & Author Portal | " + siteConfig.name,
+  description: "Sign in or register for a BlogVerse account to bookmark stories, write blogs, and engage with the community.",
 };
 
 export default function WebAuthLayout({ children }: { children: React.ReactNode }) {

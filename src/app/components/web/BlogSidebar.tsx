@@ -10,22 +10,22 @@ interface BlogSidebarProps {
 }
 
 const defaultCategories = [
-  { name: "Architecture & Design", count: 12 },
-  { name: "Sustainable Construction", count: 8 },
-  { name: "Building Materials & Tools", count: 15 },
-  { name: "Interior Innovations", count: 6 },
-  { name: "Industry Insights", count: 19 },
+  { name: "Web & Frontend Architecture", count: 18 },
+  { name: "Autonomous AI & LLMs", count: 24 },
+  { name: "Backend, Cloud & Rust", count: 15 },
+  { name: "Design Systems & UI/UX", count: 12 },
+  { name: "Startup & Engineering Leadership", count: 9 },
 ];
 
 const defaultTags = [
-  "Green Building",
-  "Smart Homes",
-  "Steel Framing",
-  "Concrete Tech",
-  "Urban Design",
-  "Landscaping",
-  "Renovation",
-  "Safety",
+  "NextJS",
+  "React",
+  "TypeScript",
+  "AI_Agents",
+  "Cloud",
+  "WebArchitecture",
+  "DevOps",
+  "OpenSource",
 ];
 
 export default function BlogSidebar({ client, recentBlogs = [] }: BlogSidebarProps) {
@@ -38,7 +38,7 @@ export default function BlogSidebar({ client, recentBlogs = [] }: BlogSidebarPro
             <input
               type="search"
               className="form-control p-3"
-              placeholder="Search articles..."
+              placeholder="Search articles & stories..."
               aria-describedby="blog-search-btn"
             />
             <span id="blog-search-btn" className="input-group-text p-3">
@@ -97,7 +97,7 @@ export default function BlogSidebar({ client, recentBlogs = [] }: BlogSidebarPro
         {/* Categories Widget */}
         <div className="col-12">
           <div className="mb-4">
-            <h4 className="fw-bold mb-3">Categories</h4>
+            <h4 className="fw-bold mb-3">Topics</h4>
             <ul className="list-unstyled fruite-categorie">
               {defaultCategories.map((cat, idx) => (
                 <li key={idx} className="border-bottom py-2">
@@ -116,7 +116,7 @@ export default function BlogSidebar({ client, recentBlogs = [] }: BlogSidebarPro
 
         {/* Recent Posts Widget */}
         <div className="col-12">
-          <h4 className="fw-bold mb-3">Recent Posts</h4>
+          <h4 className="fw-bold mb-3">Recent Stories</h4>
           {recentBlogs.length > 0 ? (
             recentBlogs.slice(0, 4).map((post, idx) => (
               <div key={idx} className="d-flex align-items-center mb-3">
@@ -160,7 +160,7 @@ export default function BlogSidebar({ client, recentBlogs = [] }: BlogSidebarPro
                 <div>
                   <h6 className="mb-1 text-truncate" style={{ maxWidth: "160px" }}>
                     <a href="#" className="text-dark text-decoration-none">
-                      Prefabrication Revolution in 2026
+                      Building High-Throughput APIs
                     </a>
                   </h6>
                   <span className="text-muted small">
@@ -179,7 +179,7 @@ export default function BlogSidebar({ client, recentBlogs = [] }: BlogSidebarPro
                 <div>
                   <h6 className="mb-1 text-truncate" style={{ maxWidth: "160px" }}>
                     <a href="#" className="text-dark text-decoration-none">
-                      Sustainable Energy in Urban Housing
+                      AI Agent Tool Sandboxing
                     </a>
                   </h6>
                   <span className="text-muted small">
@@ -212,19 +212,19 @@ export default function BlogSidebar({ client, recentBlogs = [] }: BlogSidebarPro
         {/* Newsletter Banner */}
         <div className="col-12">
           <div
-            className="rounded p-4 text-center text-white position-relative"
+            className="rounded p-4 text-center text-white position-relative shadow-sm"
             style={{ background: "linear-gradient(135deg, #81c408, #619a03)" }}
           >
             <i className="fa fa-paper-plane fa-3x mb-3 text-white-50" />
-            <h5 className="fw-bold mb-2">Subscribe to Insights</h5>
-            <p className="small mb-3">Get the latest architecture &amp; construction trends weekly.</p>
+            <h5 className="fw-bold mb-2">Subscribe to BlogVerse</h5>
+            <p className="small mb-3">Get the latest technology insights &amp; editorial stories weekly.</p>
             <div className="input-group mb-2">
               <input
                 type="email"
                 className="form-control form-control-sm"
-                placeholder="Your email"
+                placeholder="Your email address"
               />
-              <button className="btn btn-dark btn-sm">Join</button>
+              <button className="btn btn-dark btn-sm fw-bold">Join</button>
             </div>
           </div>
         </div>

@@ -1,22 +1,22 @@
 const bestsellerCards = [
-  { img: "3pcs-gardening-scissors-pruner-and-mini-folding-hand-saw-alloy-steel-construction-b0fkbf9534-1000x1000.webp", name: "PS Ricca3-Piece Gardening Tool Set", price: "₹800.00", stars: 5 },
-  { img: "WhatsAppImage2025-12-05at18.45.12.jpg", name: "PS RiccaGarden 3 Cutter Tool Set", price: "₹1,349.00", stars: 5 },
-  { img: "WhatsAppImage2025-12-04at12.54.20.jpg", name: "PS RiccaPruning Scissor & Gloves Kit", price: "₹550.00", stars: 5 },
-  { img: "WhatsAppImage2025-12-04at11.05.43.jpg", name: "PS RiccaFolding Hand Saw Pruner", price: "₹420.00", stars: 5 },
-  { img: "41bBiubDuCL._SL1080.jpg", name: "PS RiccaHeavy Duty Hedge Shears", price: "₹999.00", stars: 5 },
-  { img: "03_9bad78c5-c6a4-4aa0-af94-6b2f456da850.jpg", name: "PS Ricca5L Green Watering Can", price: "₹359.00", stars: 5 },
+  { img: "featur-1.jpg", name: "Modern Web Architecture Playbook", price: "Free Read", stars: 5, slug: "modern-web-architecture" },
+  { img: "featur-2.jpg", name: "AI Agent Engineering Handbook", price: "Free Read", stars: 5, slug: "ai-agent-engineering" },
+  { img: "featur-3.jpg", name: "Design Systems at Enterprise Scale", price: "Free Read", stars: 5, slug: "design-systems-scale" },
+  { img: "banner-fruits.jpg", name: "Zero to One: The Product Mindset", price: "Free Read", stars: 5, slug: "product-mindset" },
+  { img: "best-product-1.jpg", name: "Distributed Systems & Cloud Patterns", price: "Free Read", stars: 5, slug: "distributed-systems-patterns" },
+  { img: "best-product-2.jpg", name: "Mastering TypeScript & Modern Tooling", price: "Free Read", stars: 5, slug: "mastering-typescript" },
 ];
 
 const featuredItems = [
-  { img: "1_26e58c45-6f41-4b67-a829-b6e4805ecd63.png", name: "PS Ricca5-Piece Garden Tool Set", price: "₹820.00", stars: 5 },
-  { img: "1_b8dde6dc-821f-429f-a29d-e415145aa249.jpg", name: "PS RiccaAgriculture Khurpi Tool", price: "₹299.00", stars: 5 },
-  { img: "WhatsAppImage2026-01-09at12.23.54.jpg", name: "PS RiccaBrass Water Spray Gun", price: "₹499.50", stars: 5 },
-  { img: "ChatGPTImageJan9_2026_02_47_46PM_a2acc59d-a2a5-4991-9780-e7ebca023020.png", name: "PS RiccaHeavy Duty Gardening Axe", price: "₹799.00", stars: 5 },
+  { img: "single-item.jpg", name: "The Complete Guide to Next.js 15 & App Router", price: "Featured Guide", stars: 5, slug: "nextjs-15-app-router" },
+  { img: "featur-2.jpg", name: "Building Production LLM Applications", price: "Featured Guide", stars: 5, slug: "production-llm-applications" },
+  { img: "best-product-3.jpg", name: "Engineering Leadership in Remote Teams", price: "Featured Guide", stars: 5, slug: "engineering-leadership" },
+  { img: "featur-1.jpg", name: "UI Micro-Animations & Motion Design", price: "Featured Guide", stars: 5, slug: "ui-micro-animations" },
 ];
 
 function StarRating({ count, total = 5 }: { count: number; total?: number }) {
   return (
-    <div className="d-flex my-3">
+    <div className="d-flex my-2">
       {Array.from({ length: total }, (_, i) => (
         <i key={i} className={`fas fa-star${i < count ? " text-primary" : ""}`}></i>
       ))}
@@ -30,9 +30,9 @@ export default function Bestsellers() {
       <div className="container py-5">
         {/* Section Header */}
         <div className="text-center mx-auto mb-5" style={{ maxWidth: "700px" }}>
-          <h1 className="display-4">Bestseller Gardening Tools</h1>
+          <h1 className="display-5 fw-bold">Editor&apos;s Choice &amp; Top Guides</h1>
           <p className="text-secondary fs-5">
-            Our most popular hand pruners, garden cutters, khurpis, trowel sets, and watering tools delivered to your doorstep.
+            Our most acclaimed technology deep-dives, architectural guides, and engineering playbooks curated for your continuous growth.
           </p>
         </div>
 
@@ -40,18 +40,20 @@ export default function Bestsellers() {
           {/* Horizontal bestseller cards */}
           {bestsellerCards.map((p, i) => (
             <div className="col-lg-6 col-xl-4" key={i}>
-              <div className="p-4 rounded bg-light">
+              <div className="p-4 rounded bg-light border shadow-sm h-100">
                 <div className="row align-items-center">
-                  <div className="col-6">
-                    <img src={`/assets/img/agttools/${p.img}`} className="img-fluid rounded-circle w-100" style={{ height: "130px", objectFit: "cover" }} alt={p.name} />
+                  <div className="col-5">
+                    <img src={`/assets/img/${p.img}`} className="img-fluid rounded w-100" style={{ height: "110px", objectFit: "cover" }} alt={p.name} />
                   </div>
-                  <div className="col-6 text-start">
-                    <a href="#" className="h5 d-block text-truncate" title={p.name}>{p.name}</a>
+                  <div className="col-7 text-start">
+                    <a href={`/blog-preview?slug=${p.slug}`} className="h6 fw-bold d-block text-truncate text-dark text-decoration-none" title={p.name}>{p.name}</a>
                     <StarRating count={p.stars} />
-                    <h4 className="mb-3">{p.price}</h4>
-                    <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary">
-                      <i className="fa fa-shopping-bag me-2 text-primary"></i>Add to cart
-                    </a>
+                    <span className="badge bg-secondary text-dark mb-3">{p.price}</span>
+                    <div>
+                      <a href={`/blog-preview?slug=${p.slug}`} className="btn btn-sm btn-outline-primary rounded-pill px-3 fw-bold">
+                        Read Story &rarr;
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -61,19 +63,21 @@ export default function Bestsellers() {
           {/* Featured item cards */}
           {featuredItems.map((p, i) => (
             <div className="col-md-6 col-lg-6 col-xl-3" key={`feat-${i}`}>
-              <div className="text-center p-3 rounded bg-light">
-                <img src={`/assets/img/agttools/${p.img}`} className="img-fluid rounded w-100" style={{ height: "300px", objectFit: "contain" }} alt={p.name} />
-                <div className="py-4">
-                  <a href="#" className="h5 d-block text-truncate" title={p.name}>{p.name}</a>
-                  <div className="d-flex my-3 justify-content-center">
+              <div className="text-center p-3 rounded bg-light border shadow-sm h-100 d-flex flex-column">
+                <img src={`/assets/img/${p.img}`} className="img-fluid rounded w-100" style={{ height: "200px", objectFit: "cover" }} alt={p.name} />
+                <div className="py-3 d-flex flex-column flex-grow-1">
+                  <a href={`/blog-preview?slug=${p.slug}`} className="h6 fw-bold d-block text-dark text-decoration-none mb-1" title={p.name}>{p.name}</a>
+                  <div className="d-flex my-2 justify-content-center">
                     {Array.from({ length: 5 }, (_, j) => (
                       <i key={j} className={`fas fa-star${j < p.stars ? " text-primary" : ""}`}></i>
                     ))}
                   </div>
-                  <h4 className="mb-3">{p.price}</h4>
-                  <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary">
-                    <i className="fa fa-shopping-bag me-2 text-primary"></i>Add to cart
-                  </a>
+                  <span className="badge bg-primary text-white mx-auto mb-3">{p.price}</span>
+                  <div className="mt-auto">
+                    <a href={`/blog-preview?slug=${p.slug}`} className="btn btn-sm btn-outline-primary rounded-pill px-3 fw-bold">
+                      Read Guide &rarr;
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

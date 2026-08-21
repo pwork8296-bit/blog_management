@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import UserList from "@/app/components/admin/UserList";
 
 export const metadata: Metadata = {
-  title: "Users | Windmill Admin",
+  title: "Users | BlogVerse Admin",
   description: "Manage users and client tables",
 };
 

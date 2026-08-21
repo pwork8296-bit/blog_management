@@ -61,16 +61,11 @@ export default function Navbar() {
         </div>
         <div className="container px-0">
           <nav className="navbar navbar-light bg-white navbar-expand-xl">
-            <Link href="/" className="navbar-brand d-flex align-items-center gap-2">
-              <Image
-                src={siteConfig.logo?.src || "/assets/logo.png"}
-                alt={siteConfig.logo?.alt || siteConfig.name || "Logo"}
-                width={siteConfig.logo?.width || 200}
-                height={siteConfig.logo?.height || 60}
-                priority
-                style={{ width: "auto", height: "auto", maxHeight: "70px" }}
-              />
-              {/* <h1 className="text-primary display-6 mb-0">{siteConfig.name}</h1> */}
+            <Link href="/" className="navbar-brand d-flex align-items-center gap-2 text-decoration-none">
+              <h1 className="text-primary display-6 mb-0 fw-bold d-flex align-items-center">
+                <i className="fas fa-feather-alt text-secondary me-2" style={{ fontSize: "1.75rem" }}></i>
+                <span>{siteConfig.name}</span>
+              </h1>
             </Link>
             <button
               className="navbar-toggler py-2 px-3"
@@ -94,13 +89,19 @@ export default function Navbar() {
                   href="/shop"
                   className={`nav-item nav-link${pathname === "/shop" ? " active" : ""}`}
                 >
-                  Shop
+                  Articles &amp; Guides
+                </Link>
+                <Link
+                  href="/blog-preview"
+                  className={`nav-item nav-link${pathname === "/blog-preview" ? " active" : ""}`}
+                >
+                  Blog Preview
                 </Link>
                 <Link
                   href="/shop-detail"
                   className={`nav-item nav-link${pathname === "/shop-detail" ? " active" : ""}`}
                 >
-                  Shop Detail
+                  Publications
                 </Link>
                 <div className={`nav-item dropdown ${isDropdownOpen ? "show" : ""}`}>
                   <a
@@ -116,6 +117,12 @@ export default function Navbar() {
                   </a>
                   <div className={`dropdown-menu m-0 bg-secondary rounded-0 ${isDropdownOpen ? "show" : ""}`}>
                     <Link
+                      href="/testimonial"
+                      className={`dropdown-item${pathname === "/testimonial" ? " active" : ""}`}
+                    >
+                      Testimonials
+                    </Link>
+                    <Link
                       href="/cart"
                       className={`dropdown-item${pathname === "/cart" ? " active" : ""}`}
                     >
@@ -126,12 +133,6 @@ export default function Navbar() {
                       className={`dropdown-item${pathname === "/checkout" ? " active" : ""}`}
                     >
                       Checkout
-                    </Link>
-                    <Link
-                      href="/testimonial"
-                      className={`dropdown-item${pathname === "/testimonial" ? " active" : ""}`}
-                    >
-                      Testimonial
                     </Link>
                     <Link
                       href="/404"

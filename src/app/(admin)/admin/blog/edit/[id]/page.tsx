@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import BlogForm from "@/app/components/admin/BlogForm";
 
 export const metadata: Metadata = {
-  title: "Edit Blog | Windmill Admin",
+  title: "Edit Blog | BlogVerse Admin",
   description: "Update blog content and SEO metadata",
 };
 

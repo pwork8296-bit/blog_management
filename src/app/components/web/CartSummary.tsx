@@ -13,16 +13,16 @@ export default function CartSummary() {
               <p className="mb-0">₹547.00</p>
             </div>
             <div className="d-flex justify-content-between">
-              <h5 className="mb-0 me-4">Shipping</h5>
+              <h5 className="mb-0 me-4">Delivery</h5>
               <div>
-                <p className="mb-0">Express Delhi NCR: ₹49.00</p>
+                <p className="mb-0 text-success fw-bold">Instant Digital Access (Free)</p>
               </div>
             </div>
-            <p className="mb-0 text-end text-muted small mt-1">Delivery to Noida, Delhi &amp; Ghaziabad.</p>
+            <p className="mb-0 text-end text-muted small mt-1">PDF, EPUB &amp; GitHub repo access via email.</p>
           </div>
           <div className="py-4 mb-4 border-top border-bottom d-flex justify-content-between">
             <h5 className="mb-0 ps-4 me-4">Total</h5>
-            <p className="mb-0 pe-4 fw-bold text-primary fs-4">₹596.00</p>
+            <p className="mb-0 pe-4 fw-bold text-primary fs-4">₹1,597.00</p>
           </div>
           <a
             href="/checkout"

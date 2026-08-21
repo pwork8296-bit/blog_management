@@ -1,23 +1,23 @@
 const testimonials = [
   {
-    text: "Ordered the 108-piece socket set and PS Ricca3-piece gardening tool set. Outstanding build quality, robust steel, and super fast delivery within 2 days!",
+    text: "BlogVerse has completely transformed how I discover technology insights and deep architectural essays. The quality of writing here is unmatched!",
     img: "avatar-1.jpg",
-    name: "Pooja Sharma",
-    profession: "Home & Garden Owner",
+    name: "Alex Rivera",
+    profession: "Staff Software Architect",
     stars: 5,
   },
   {
-    text: "PS RiccaTools pruning shears and car washing spray gun are top-notch. Sharp blades, comfortable grip, and fantastic value for money.",
+    text: "Publishing on BlogVerse gave my engineering articles tremendous reach. The markdown editor and analytics dashboard are pure joy to work with.",
     img: "avatar-1.jpg",
-    name: "Rohan Verma",
-    profession: "Landscaping Enthusiast",
+    name: "Sophia Chen",
+    profession: "AI Research Lead & Writer",
     stars: 5,
   },
   {
-    text: "Great experience buying heavy duty hedge shears and watering can. The alloy steel construction feels extremely durable.",
+    text: "The distraction-free reading mode and vibrant comments community make BlogVerse my morning daily destination for thoughtful reads.",
     img: "avatar-1.jpg",
-    name: "Ananya Gupta",
-    profession: "Professional Workshop Owner",
+    name: "Marcus Vance",
+    profession: "Design Systems Director",
     stars: 5,
   },
 ];
@@ -27,8 +27,8 @@ export default function Testimonials() {
     <div className="container-fluid testimonial py-5">
       <div className="container py-5">
         <div className="testimonial-header text-center">
-          <h4 className="text-primary">Our Testimonial</h4>
-          <h1 className="display-5 mb-5 text-dark">Our Client Saying!</h1>
+          <h4 className="text-primary fw-bold">Community Voices</h4>
+          <h1 className="display-5 mb-5 text-dark fw-bold">What Readers &amp; Authors Say</h1>
         </div>
 
         {/* Owl Carousel — items are rendered; carousel init happens via main.js */}

@@ -1,19 +1,19 @@
 const orderItems = [
-  { img: "/assets/img/agttools/3pcs-gardening-scissors-pruner-and-mini-folding-hand-saw-alloy-steel-construction-b0fkbf9534-1000x1000.webp", name: "PS Ricca3-Piece Gardening Tool Set", price: "₹800.00", qty: 1, total: "₹800.00" },
-  { img: "/assets/img/agttools/WhatsAppImage2025-12-05at18.45.12.jpg", name: "PS RiccaGarden 3 Cutter Tool Set", price: "₹1,349.00", qty: 1, total: "₹1,349.00" },
-  { img: "/assets/img/agttools/03_9bad78c5-c6a4-4aa0-af94-6b2f456da850.jpg", name: "PS Ricca5 Litre Green Watering Can", price: "₹359.00", qty: 1, total: "₹359.00" },
+  { img: "/assets/img/featur-1.jpg", name: "Modern Web Architecture (2026 Edition)", price: "₹499.00", qty: 1, total: "₹499.00" },
+  { img: "/assets/img/featur-2.jpg", name: "Autonomous Agents & LLM Engineering", price: "₹699.00", qty: 1, total: "₹699.00" },
+  { img: "/assets/img/featur-3.jpg", name: "Design Systems for Enterprise Apps", price: "₹399.00", qty: 1, total: "₹399.00" },
 ];
 
 const paymentMethods = [
   {
-    id: "Transfer-1", name: "Transfer", label: "UPI / Net Banking / Bank Transfer",
-    description: "Pay conveniently via Google Pay, PhonePe, Paytm, or direct Net Banking across India."
+    id: "Transfer-1", name: "Transfer", label: "Instant UPI / Net Banking",
+    description: "Pay securely via Google Pay, PhonePe, Paytm, or direct Net Banking."
   },
   {
-    id: "Delivery-1", name: "Delivery", label: "Cash On Delivery (COD)",
-    description: "Pay cash upon delivery of your gardening tools anywhere in India."
+    id: "Card-1", name: "Card", label: "Credit / Debit Card (Visa, MasterCard, Amex)",
+    description: "Encrypted 256-bit SSL transaction for global cards."
   },
-  { id: "Payments-1", name: "Payments", label: "Debit / Credit Card Payment" },
+  { id: "PayPal-1", name: "PayPal", label: "PayPal / International Payments" },
 ];
 
 export default function CheckoutOrderSummary() {
@@ -75,8 +75,8 @@ export default function CheckoutOrderSummary() {
               </td>
               <td colSpan={3} className="py-4">
                 {[
-                  { id: "Shipping-1", label: "Standard Shipping: Free" },
-                  { id: "Shipping-2", label: "Express Courier: ₹99.00" },
+                  { id: "Shipping-1", label: "Instant Digital Delivery: Free" },
+                  { id: "Shipping-2", label: "Include Physical Print Edition: +₹199.00" },
                 ].map((opt) => (
                   <div className="form-check text-start" key={opt.id}>
                     <input

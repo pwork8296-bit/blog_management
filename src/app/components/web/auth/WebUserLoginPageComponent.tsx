@@ -48,8 +48,8 @@ export default function WebUserLoginPageComponent() {
             <Link href="/" className="d-inline-block mb-3 text-decoration-none">
               <span className="h3 fw-bold text-primary mb-0">{siteConfig.name}</span>
             </Link>
-            <h4 className="fw-bold text-dark mb-1">Customer Login</h4>
-            <p className="text-muted small">Sign in to your customer account</p>
+            <h4 className="fw-bold text-dark mb-1">Reader &amp; Author Login</h4>
+            <p className="text-muted small">Sign in to your BlogVerse reader or author account</p>
           </div>
 
           <form onSubmit={handleSubmit} noValidate>

@@ -1,25 +1,25 @@
 const specs = [
-  { label: "Material", value: "High-Grade Alloy Steel & Chrome Vanadium" },
-  { label: "Components Included", value: "Bypass Pruner + Harvest Scissors + Folding Saw" },
-  { label: "Blade Finish", value: "Rust-Resistant Non-Stick Coating" },
-  { label: "Handle Type", value: "Ergonomic Anti-Slip Grip Handle" },
-  { label: "Application", value: "Tree Pruning, Gardening, Harvesting, Branch Cutting" },
+  { label: "Author", value: "Alex Rivera & Editorial Team" },
+  { label: "Format", value: "Digital E-Book (PDF, EPUB) + GitHub Repo" },
+  { label: "Pages / Chapters", value: "320 Pages (18 Comprehensive Chapters)" },
+  { label: "Skill Level", value: "Intermediate to Advanced Developers" },
+  { label: "Included Resources", value: "Next.js 15 Templates, Dockerfiles, Architecture Diagrams" },
 ];
 
 const reviews = [
   {
     avatar: "/assets/img/avatar.jpg",
-    date: "May 10, 2025",
-    name: "Jason Smith",
+    date: "August 12, 2026",
+    name: "Devon Clark",
     stars: 5,
-    text: "Received the PS Ricca3-piece gardening tool set in perfect condition. Extremely sharp blades and solid build!",
+    text: "The best engineering guide I have read this year. The chapters on state management and edge caching saved our team weeks of trial and error.",
   },
   {
     avatar: "/assets/img/avatar.jpg",
-    date: "June 2, 2025",
+    date: "August 16, 2026",
     name: "Priya Sharma",
     stars: 5,
-    text: "High quality steel and comfortable handles. Essential tool kit for home gardening and pruning.",
+    text: "Extremely lucid explanations and real-world architectures. Essential reading for any frontend architect.",
   },
 ];
 
@@ -43,13 +43,13 @@ export default function ProductDetail() {
 
         {/* Product Image */}
         <div className="col-lg-6">
-          <div className="border rounded overflow-hidden">
+          <div className="border rounded overflow-hidden shadow-sm">
             <a href="#">
               <img
-                src="/assets/img/agttools/3pcs-gardening-scissors-pruner-and-mini-folding-hand-saw-alloy-steel-construction-b0fkbf9534-1000x1000.webp"
+                src="/assets/img/featur-1.jpg"
                 className="img-fluid rounded w-100"
                 style={{ maxHeight: "400px", objectFit: "cover" }}
-                alt="PS Ricca3-Piece Gardening Tool Set"
+                alt="Modern Web Architecture Playbook"
               />
             </a>
           </div>
@@ -57,17 +57,17 @@ export default function ProductDetail() {
 
         {/* Product Info */}
         <div className="col-lg-6">
-          <h4 className="fw-bold mb-3">PS Ricca3-Piece Gardening Tool Set with Pruner, Harvest Scissors &amp; Folding Saw</h4>
-          <p className="mb-3 text-secondary">Category: Gardening Tool Kits</p>
-          <h5 className="fw-bold mb-3 text-primary">₹800.00</h5>
+          <h4 className="fw-bold mb-3">Modern Web Architecture &amp; Distributed Systems (2026 Edition)</h4>
+          <p className="mb-3 text-secondary">Category: Web Engineering &amp; Architecture</p>
+          <h5 className="fw-bold mb-3 text-primary">₹499.00</h5>
           <div className="mb-4">
             <StarRating filled={5} />
           </div>
           <p className="mb-3">
-            PS Ricca3-Piece Gardening Tool Set includes a heavy-duty bypass pruner, lightweight harvest scissors, and a folding carbon steel hand saw. Engineered for precision cutting, branch pruning, and long-lasting durability.
+            A comprehensive, hands-on architectural playbook designed for engineers, tech leads, and technical founders building high-scale modern applications.
           </p>
           <p className="mb-4 text-muted">
-            Includes 3 essential gardening tools with ergonomic anti-slip handles. Fast express shipping across India.
+            Includes full PDF/EPUB downloads, interactive diagram files, and lifetime updates. Instant digital delivery upon checkout.
           </p>
 
           {/* Quantity Stepper */}
@@ -90,11 +90,11 @@ export default function ProductDetail() {
           </div>
 
           <a
-            href="#"
+            href="/cart"
             className="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary fw-bold"
           >
             <i className="fa fa-shopping-bag me-2 text-primary" />
-            Add to cart
+            Get Publication
           </a>
         </div>
 
@@ -103,7 +103,7 @@ export default function ProductDetail() {
           <nav>
             <div className="nav nav-tabs mb-3">
               <button
-                className="nav-link active border-white border-bottom-0"
+                className="nav-link active border-white border-bottom-0 fw-bold"
                 type="button"
                 role="tab"
                 id="nav-about-tab"
@@ -112,10 +112,10 @@ export default function ProductDetail() {
                 aria-controls="nav-about"
                 aria-selected="true"
               >
-                Tool Specifications &amp; Details
+                Publication Overview &amp; Curriculum
               </button>
               <button
-                className="nav-link border-white border-bottom-0"
+                className="nav-link border-white border-bottom-0 fw-bold"
                 type="button"
                 role="tab"
                 id="nav-mission-tab"
@@ -124,7 +124,7 @@ export default function ProductDetail() {
                 aria-controls="nav-mission"
                 aria-selected="false"
               >
-                Customer Reviews
+                Reader Reviews
               </button>
             </div>
           </nav>
@@ -138,10 +138,10 @@ export default function ProductDetail() {
               aria-labelledby="nav-about-tab"
             >
               <p>
-                The PS Ricca3-Piece Gardening Tool Set is crafted from high-grade alloy steel treated for rust resistance and high strength. Featuring ultra-sharp bypass pruning blades and a compact folding saw for thick wood branches.
+                Modern Web Architecture breaks down complex architectural patterns into clear, actionable blueprints. From Next.js Server Components and streaming SSR to micro-frontends and event-driven backends.
               </p>
               <p>
-                Designed with ergonomic handles to reduce hand fatigue during extended gardening, landscaping, and farming tasks.
+                Authored by veteran engineers and technical consultants with over 12 years of production experience in high-concurrency systems.
               </p>
               <div className="px-2">
                 <div className="row g-4">

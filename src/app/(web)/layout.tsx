@@ -7,7 +7,7 @@ import WebProtectedRoute from "../context/WebProtectedRoute";
 
 export const metadata: Metadata = {
   title: siteConfig.title,
-  description: "Shop fresh indoor & outdoor plants online at PS Ricca. Best nursery in Delhi NCR offering fast delivery in Noida, Delhi & Ghaziabad. Free Delivery and Cash on Delivery.",
+  description: "Read inspiring stories, expert technology tutorials, creative writing, and publish your own blogs on BlogVerse.",
   icons: {
     icon: siteConfig.favicon,
     shortcut: siteConfig.favicon,

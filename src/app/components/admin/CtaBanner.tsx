@@ -7,9 +7,9 @@ interface CtaBannerProps {
 }
 
 export default function CtaBanner({
-  text = "Star this project on GitHub",
-  linkHref = "https://github.com/themewagon/windmill-dashboard",
-  linkLabel = "View more →",
+  text = "Explore BlogVerse Publishing & Docs",
+  linkHref = "/admin/blogs",
+  linkLabel = "View blogs →",
 }: CtaBannerProps) {
   return (
     <a

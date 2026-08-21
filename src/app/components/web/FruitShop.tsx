@@ -1,63 +1,117 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 
-interface Product {
+interface Article {
   img: string;
   category: string;
   name: string;
-  price: string;
+  readTime: string;
   tab: string[];
+  slug: string;
 }
 
-const products: Product[] = [
-  { img: "3pcs-gardening-scissors-pruner-and-mini-folding-hand-saw-alloy-steel-construction-b0fkbf9534-1000x1000.webp", category: "Garden Tool Kits", name: "PS Ricca3-Piece Gardening Tool Set with Pruner & Saw", price: "₹800.00", tab: ["all", "kits"] },
-  { img: "WhatsAppImage2025-12-05at18.45.12.jpg", category: "Cutters & Pruners", name: "PS RiccaGarden 3 Cutter Tool Set | Plant Pruning Scissor", price: "₹1,349.00", tab: ["all", "cutters"] },
-  { img: "WhatsAppImage2025-12-04at12.54.20.jpg", category: "Garden Tool Kits", name: "PS RiccaGarden Tool Kit | Heavy-Duty Pruning Scissor & Gloves", price: "₹550.00", tab: ["all", "kits"] },
-  { img: "WhatsAppImage2025-12-04at11.05.43.jpg", category: "Cutters & Pruners", name: "PS RiccaFolding Hand Saw Pruner Tree Branch Cutter", price: "₹420.00", tab: ["all", "cutters"] },
-  { img: "41bBiubDuCL._SL1080.jpg", category: "Cutters & Pruners", name: "PS RiccaHeavy Duty Hedge Shears 29 Inch for Garden Trimming", price: "₹999.00", tab: ["all", "cutters"] },
-  { img: "03_9bad78c5-c6a4-4aa0-af94-6b2f456da850.jpg", category: "Watering Cans", name: "AGT® 5 Litre Green Plastic Long Spout Watering Can", price: "₹359.00", tab: ["all", "watering"] },
-  { img: "01_13c53828-22eb-42a8-b023-fff4c95e8c00.jpg", category: "Garden Tool Kits", name: "AGT® Gardening Tool Combo – Pruning Shear & Hand Weeder", price: "₹620.00", tab: ["all", "kits"] },
-  { img: "1_26e58c45-6f41-4b67-a829-b6e4805ecd63.png", category: "Hand Tools", name: "AGT® Garden Tool Set - 5 Tools (Weeder, Shovel, Cultivator)", price: "₹820.00", tab: ["all", "hand"] },
-  { img: "1_b8dde6dc-821f-429f-a29d-e415145aa249.jpg", category: "Hand Tools", name: "AGT® Garden Khurpi Agriculture Tool", price: "₹299.00", tab: ["all", "hand"] },
-  { img: "1_719e74bf-70de-4a93-bdb1-171aacb84775.jpg", category: "Hand Tools", name: "AGT® Garden Tool Set - Cultivator, Garden Fork, Trowel", price: "₹499.00", tab: ["all", "hand"] },
-  { img: "WhatsAppImage2026-01-09at12.23.54.jpg", category: "Watering Cans", name: "PS RiccaHeavy Duty Brass Water Spray Gun for Garden", price: "₹499.50", tab: ["all", "watering"] },
-  { img: "ChatGPTImageJan9_2026_02_47_46PM_a2acc59d-a2a5-4991-9780-e7ebca023020.png", category: "Cutters & Pruners", name: "PS RiccaHeavy Duty Gardening Axe 400g – Fibreglass Handle", price: "₹799.00", tab: ["all", "cutters"] },
+const articles: Article[] = [
+  {
+    img: "featur-1.jpg",
+    category: "Tech & Architecture",
+    name: "Architecting Modern Scalable Web Apps in 2026",
+    readTime: "6 min read",
+    tab: ["all", "tech"],
+    slug: "architecting-modern-scalable-web-apps-2026",
+  },
+  {
+    img: "featur-2.jpg",
+    category: "AI & Engineering",
+    name: "Autonomous Agents and the Evolution of Coding",
+    readTime: "8 min read",
+    tab: ["all", "tech", "ai"],
+    slug: "autonomous-agents-evolution-of-coding",
+  },
+  {
+    img: "featur-3.jpg",
+    category: "Design & UX",
+    name: "Building Resilient Design Systems for High Growth",
+    readTime: "5 min read",
+    tab: ["all", "design"],
+    slug: "building-resilient-design-systems",
+  },
+  {
+    img: "banner-fruits.jpg",
+    category: "Startups & Growth",
+    name: "Bootstrapping to $1M ARR: Lessons in Product Velocity",
+    readTime: "7 min read",
+    tab: ["all", "startups"],
+    slug: "bootstrapping-to-1m-arr",
+  },
+  {
+    img: "single-item.jpg",
+    category: "Writing & Culture",
+    name: "The Art of Clear Thinking and Long-Form Writing",
+    readTime: "4 min read",
+    tab: ["all", "culture"],
+    slug: "art-of-clear-thinking-writing",
+  },
+  {
+    img: "best-product-1.jpg",
+    category: "Tech & DevOps",
+    name: "Serverless Microservices and Distributed Caching",
+    readTime: "9 min read",
+    tab: ["all", "tech"],
+    slug: "serverless-microservices-caching",
+  },
+  {
+    img: "best-product-2.jpg",
+    category: "Design & UX",
+    name: "Micro-Interactions That Delight: A Designer's Guide",
+    readTime: "5 min read",
+    tab: ["all", "design"],
+    slug: "micro-interactions-guide",
+  },
+  {
+    img: "best-product-3.jpg",
+    category: "AI & Future",
+    name: "The Next Decade of Human-AI Collaborative Work",
+    readTime: "6 min read",
+    tab: ["all", "ai", "culture"],
+    slug: "decade-of-human-ai-collaboration",
+  },
 ];
 
 const tabs = [
-  { id: "all", label: "All Garden Tools" },
-  { id: "kits", label: "Tool Kits" },
-  { id: "cutters", label: "Pruners & Cutters" },
-  { id: "hand", label: "Khurpi & Trowels" },
-  { id: "watering", label: "Watering & Spray" },
+  { id: "all", label: "All Stories" },
+  { id: "tech", label: "Tech & Cloud" },
+  { id: "ai", label: "AI & Innovation" },
+  { id: "design", label: "Design & UX" },
+  { id: "startups", label: "Startups" },
 ];
 
 export default function FruitShop() {
   const [activeTab, setActiveTab] = useState("all");
-  const filtered = products.filter((p) => p.tab.includes(activeTab));
+  const filtered = articles.filter((p) => p.tab.includes(activeTab));
 
   return (
     <div className="container-fluid fruite py-5">
       <div className="container py-5">
         <div className="tab-class text-center">
           {/* Header Row */}
-          <div className="row g-4">
+          <div className="row g-4 align-items-center mb-4">
             <div className="col-lg-4 text-start">
-              <h1>Gardening Tools Collection</h1>
+              <h1 className="fw-bold mb-0">Curated Articles</h1>
             </div>
             <div className="col-lg-8 text-end">
-              <ul className="nav nav-pills d-inline-flex text-center mb-5">
+              <ul className="nav nav-pills d-inline-flex text-center mb-0">
                 {tabs.map((t) => (
                   <li className="nav-item" key={t.id}>
                     <a
                       href="#"
-                      className={`d-flex m-2 py-2 bg-light rounded-pill${activeTab === t.id ? " active" : ""}`}
+                      className={`d-flex m-2 py-2 px-3 bg-light rounded-pill${activeTab === t.id ? " active" : ""}`}
                       onClick={(e) => {
                         e.preventDefault();
                         setActiveTab(t.id);
                       }}
                     >
-                      <span className={activeTab === t.id ? "text-white" : "text-dark"} style={{ width: "150px" }}>
+                      <span className={activeTab === t.id ? "text-white fw-bold" : "text-dark"} style={{ minWidth: "100px" }}>
                         {t.label}
                       </span>
                     </a>
@@ -67,35 +121,39 @@ export default function FruitShop() {
             </div>
           </div>
 
-          {/* Products Grid */}
+          {/* Articles Grid */}
           <div className="tab-content">
             <div className="tab-pane fade show p-0 active">
               <div className="row g-4">
                 {filtered.map((p, i) => (
                   <div className="col-md-6 col-lg-4 col-xl-3" key={i}>
-                    <div className="rounded position-relative fruite-item">
-                      <div className="fruite-img" style={{ height: "300px", overflow: "hidden" }}>
+                    <div className="rounded position-relative fruite-item border h-100 d-flex flex-column bg-white shadow-sm overflow-hidden">
+                      <div className="fruite-img" style={{ height: "200px", overflow: "hidden" }}>
                         <img
-                          src={`/assets/img/agttools/${p.img}`}
+                          src={`/assets/img/${p.img}`}
                           className="img-fluid w-100 h-100 rounded-top"
-                          style={{ objectFit: "contain" }}
+                          style={{ objectFit: "cover" }}
                           alt={p.name}
                         />
                       </div>
                       <div
-                        className="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                        style={{ top: "10px", left: "10px" }}
+                        className="text-white bg-primary px-3 py-1 rounded-pill position-absolute small font-weight-bold"
+                        style={{ top: "12px", left: "12px", fontSize: "0.75rem" }}
                       >
                         {p.category}
                       </div>
-                      <div className="p-4 border border-secondary border-top-0 rounded-bottom text-start">
-                        <h4 className="fs-6" title={p.name}>{p.name}</h4>
-                        {/* <p className="text-truncate">Durable alloy steel construction for home gardening &amp; landscaping.</p> */}
-                        <div className="d-flex justify-content-between flex-lg-wrap align-items-center">
-                          <p className="text-dark fs-5 fw-bold mb-0">{p.price}</p>
-                          <a href="#" className="btn border border-secondary rounded-pill px-3 text-primary">
-                            <i className="fa fa-shopping-bag me-2 text-primary"></i>Add to cart
-                          </a>
+                      <div className="p-4 border-top-0 rounded-bottom text-start d-flex flex-column flex-grow-1">
+                        <h5 className="fs-6 fw-bold text-dark mb-2" title={p.name} style={{ minHeight: "44px" }}>
+                          {p.name}
+                        </h5>
+                        <div className="mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
+                          <span className="text-muted small">
+                            <i className="fa fa-clock text-secondary me-1"></i>
+                            {p.readTime}
+                          </span>
+                          <Link href={`/blog-preview?slug=${p.slug}`} className="btn btn-sm btn-outline-primary rounded-pill px-3 fw-bold">
+                            Read &rarr;
+                          </Link>
                         </div>
                       </div>
                     </div>
